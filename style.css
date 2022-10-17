@@ -1,0 +1,205 @@
+
+#idbody{
+    background-color: #4b91e6;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 600px;
+    height: 50px;
+    margin-bottom: 0;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border: 3px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.button_alt{
+    width: 220px;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: beige;
+    font-size: 1.2rem;
+}
+
+#container{
+    display: block;
+    width: 600px;
+    height: 480px;
+    border: 3px solid black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: auto;
+    background-color: rgb(33, 69, 167);
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    border: 1px black solid;
+    width: 350px;
+    margin: auto;
+    background-color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.unit_converter{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 70px;
+    background-color: aliceblue;
+}
+
+
+#unit_req > input{
+    margin-left: 30px;
+    width: 80%;
+    text-align: center;
+    height: 25px;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+
+#unit_req > select{
+    height: 29px;
+    margin-right: 30px;
+    width: 20%;
+    text-align: center;
+
+}
+
+.unit_converter > select{
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+
+#final_result{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+/* .final_result > span{
+    margin: auto;
+    background-color: aqua;
+    border: 1px black solid;
+    width: 200px;
+} */
+
+.button_calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 30px;
+    background-color: aliceblue;
+
+}
+
+
+
+/* DISPLAY ELETRICIDADE */
+
+#container2{
+    display: none;
+    width: 600px;
+    height: 480px;
+    border: 3px solid black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: auto;
+    background-color: rgb(216, 219, 7);
+}
+
+.title2{
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+
+}
+
+
+
+#final_result2{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 255, 103);
+}
+
+@media screen and (max-width: 600px){
+    
+.buttons, #container, #container2{
+    width: 300px;
+}
+
+.button_alt{
+    width: 110px;
+    font-size: 0.9rem;
+}
+
+.title, .title2{
+    font-size: 1rem;
+}
+
+.content{
+    width: 250px;
+}
+
+.unit_converter{
+    width: 250px;
+}
+
+#unit_req > input{
+    margin-left: 5px;
+}
+
+#unit_req > select{
+    margin-right: 5px;
+}
+
+.button_calc{
+    width: 250px;
+}
+
+}
+
+

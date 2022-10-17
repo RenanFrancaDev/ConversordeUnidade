@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Conversor de unidade</title>
+</head>
+<body id="idbody">
+    <div class="buttons">
+        <div>
+            <button class="button_alt" onclick="alternate()">Liquid</button>
+        </div>
+        <div>
+            <button class="button_alt" onclick="alternate2()">Eletric</button>
+        </div>
+    </div>
+    <div id="container">
+        <div class="title">
+        <h1>Liquid converter</h1>
+        </div>
+        <div class="content">
+            <h3>Value to converter</h3>
+            <div class="unit_converter" id="unit_req">
+                <input type="number" id="unit_nec" placeholder="Type just the value, Ex: 2.8" name="number" required>
+                <select name="unit_list" id="unit_select">
+                    <option value="L">L</option>
+                    <option value="ml">ml</option>
+                    <option value="m3">m³</option>
+                </select>
+
+            </div>
+            <div class="unit_converter">
+                <select name="unit_result_list" id="unit_necessary">
+                    <option value="L">Litre (L)</option>
+                    <option value="ml">Milliliter(ml)</option>
+                    <option value="m3">cubic meter(m³)</option>
+        </select>
+            </div>
+            <div id="final_result">
+                    <!-- <input type="text" id="result" placeholder="Result" name="result" value=""> -->
+            </div>
+        </div>
+        <div>
+            <button class="button_calc" onclick="calc()">Calculate</button> 
+        </div>
+    </div>
+    <div id="container2">
+        <div class="title2">
+        <h1>Eletric Converter</h1>
+        </div>
+        <div class="content">
+            <h3>Value to converter</h3>
+            <div class="unit_converter" id="unit_req">
+                <input type="number" id="unit_nec2" placeholder="Type just the value, Ex: 2.8" name="number" required>
+                <select name="unit_list" id="unit_select2">
+                    <option value="K">K</option>
+                    <option value="m">m</option>
+                    <option value="u">u</option>
+                </select>
+
+            </div>
+            <div class="unit_converter">
+                <select name="unit_result_list" id="unit_necessary2">
+                    <option value="K">Quilo (K)</option>
+                    <option value="m">Mili (m)</option>
+                    <option value="u">micro (µ) <!--alt+230--></option>
+        </select>
+            </div>
+            <div id="final_result2">
+                    <!-- <input type="text" id="result" placeholder="Result" name="result" value=""> -->
+            </div>
+        </div>
+        <div>
+            <button class="button_calc" onclick="calc2()">Calculate</button> 
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
